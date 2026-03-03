@@ -21,15 +21,12 @@ import geopandas as gpd
 import pandas as pd
 from windrose import WindroseAxes
 
-# save scriptname
-scriptname = "vegetation_detection_example_PUB"
-
 plt.style.use('seaborn-v0_8')
 
 # input:
-rgb_loc = r"U:\dronemotor\publication\03_RGB\20241009_rgb.tif"
-gli_loc = r"U:\dronemotor\publication\04_vegetation_detections\20241009_gli.tif"
-veg_loc = r"U:\dronemotor\publication\04_vegetation_detections\20241009_gli_otsu.tif"
+rgb_loc = # \03_RGB\20241009_rgb.tif
+gli_loc = # \04_vegetation_detections\20241009_gli.tif
+veg_loc = # \04_vegetation_detections\20241009_gli_otsu.tif
 
 
 #%% data
