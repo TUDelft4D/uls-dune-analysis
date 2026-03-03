@@ -24,12 +24,9 @@ from windrose import WindroseAxes
 plt.style.use('seaborn-v0_8')
 
 # input:
-rgb_loc = # \03_RGB\20241009_rgb.tif
-gli_loc = # \04_vegetation_detections\20241009_gli.tif
-veg_loc = # \04_vegetation_detections\20241009_gli_otsu.tif
-
-
-#%% data
+rgb_loc = # \02_RGB\20241009_rgb.tif
+gli_loc = # \03_vegetation_detections\20241009_gli.tif
+veg_loc = # \03_vegetation_detections\20241009_gli_otsu.tif
 
 # rgb
 with rasterio.open(rgb_loc) as src:
@@ -71,12 +68,10 @@ colors_veg = ['green', # veg
 cmap_veg = ListedColormap(colors_veg)
 norm = BoundaryNorm([1, 2, 3], cmap_veg.N)
 
-#%% settings
-
 degrees = 48.7
 letters = ['(a)', '(b)', '(c)']
 
-#%% plot
+### plot
 
 fig, ax = plt.subplots(1, 3, figsize=(12, 4), sharey=True)
 
