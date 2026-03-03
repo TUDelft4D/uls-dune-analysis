@@ -10,7 +10,7 @@ from glob import glob
 import os
 from pathlib import Path
 from sklearn.cluster import KMeans
-
+import matplotlib.pyplot as plt
 
 
 # load dems and stack into 3D array 
