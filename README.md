@@ -1,5 +1,5 @@
-# UAV-LIDAR time series analysis
-This repository provides the code framework to analyse a time series of UAV-LIDAR derived DEMs of the Zandmotor, available at [DOI], underlying the publication [DOI].
+# UAV-LIDAR morphological dynamics analysis
+This repository provides the code framework to analyse a time series of UAV-LIDAR derived DEMs and RGB imagery of the Zandmotor, available at [DOI], underlying the publication [DOI].
 
 The repository is organized in two folders. One for the analysis and one for visualization.
 
