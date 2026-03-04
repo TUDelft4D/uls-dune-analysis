@@ -69,7 +69,6 @@ axs[2].set_xlim(-15,15)
 axs[2].set_xlabel('Coef. of variation of elevation change rate')
 axs[2].scatter(df_veg_dz['dz_mean_std']/(df_veg_dz['dz_mean_mean']), df_veg_dz['veg_cov'], color='tab:orange', s=5)
 plt.tight_layout()
-plt.show()
 plt.savefig(r"vegetation_cover_coef_variance_mean.png", dpi=300)
-
+plt.show()
 

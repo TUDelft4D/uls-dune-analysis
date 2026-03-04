@@ -190,5 +190,4 @@ for i, epoch in enumerate(df['epoch']):
         ax_ridge.set_yticklabels([])
 
 plt.savefig('ridge_orientations.png', dpi=300)
-plt.show()
 
