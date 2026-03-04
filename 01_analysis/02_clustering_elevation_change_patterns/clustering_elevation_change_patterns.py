@@ -20,7 +20,6 @@ epochs = [Path(f).stem[:8] for f in dems_folder]
 
 
 dems = []
-hillshades = []
 for i, (f, epoch) in enumerate(zip(dems_folder, epochs)):
     print(i, f, epoch)
     with rio.open(f) as src:
@@ -28,11 +27,8 @@ for i, (f, epoch) in enumerate(zip(dems_folder, epochs)):
         dem = np.where(dem == src.nodata, np.nan, dem)
         if i == 0:
             dems = np.ones((dem.shape[0], dem.shape[1], len(dems_folder))) * np.nan
-            hillshades = np.ones((dem.shape[0], dem.shape[1], len(dems_folder))) * np.nan
         transform = src.transform
-        hillshade = es.hillshade(dem, altitude=1)
         dems[:,:,i] = dem
-        hillshades[:,:,i] = hillshade
 
 
 
@@ -69,11 +65,10 @@ labels_2d = labels.reshape(dod.shape[0], dod.shape[1])
 from sklearn.metrics import silhouette_score
 cluster_range = range(2, 11)
 variances = []
-silhouette_scores = []
 for i, n_clusters in enumerate(cluster_range):
     print(i)
-    kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(X_clean)
-    variances.append(kmeans.inertia_)
+    kmeans_var = KMeans(n_clusters=n_clusters, random_state=0).fit(X_clean)
+    variances.append(kmeans_var.inertia_)
 
 # plot variance
 fig, ax = plt.subplots(1, 2, figsize=(12, 5))
