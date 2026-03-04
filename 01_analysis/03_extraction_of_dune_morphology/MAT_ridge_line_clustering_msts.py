@@ -6,20 +6,14 @@ Script to cluster the ridge points based on DBSCAN, and then compute connected r
 import numpy as np
 import matplotlib.pyplot as plt
 import geopandas as gpd
-import seaborn as sns
 import pandas as pd
 import rasterio as rio
 from glob import glob
 import os
 from pathlib import Path
-from sklearn.neighbors import KDTree
 from sklearn.decomposition import PCA
-import earthpy.spatial as es
-import plotly.express as px
 from shapely.geometry import LineString
-import matplotlib.cm as cm
 import networkx as nx
-from scipy.spatial import cKDTree
 from scipy.spatial import Delaunay
 
 
