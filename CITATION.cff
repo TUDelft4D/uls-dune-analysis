@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: ULS Dune Analysis Framework
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Romy
+    family-names: Hulskamp
+    email: r.l.hulskamp@tudelft.nl
+    affiliation: Delft University of Technology
+    orcid: 'https://orcid.org/0000-0002-4555-7385'
+  - given-names: Daan
+    family-names: Hulskemper
+    email: d.c.hulskemper@tudelft.nl
+    affiliation: Delft University of Technology
+    orcid: 'https://orcid.org/0009-0006-0949-5726'
+repository-code: 'https://github.com/TUDelft4D/uls-dune-analysis.git'
+keywords:
+  - Coastal Morphology
+  - Dunes
+  - Ecomorphodynamics
+  - UAV-LiDAR
+license: MIT

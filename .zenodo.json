@@ -1,0 +1,30 @@
+{
+    "creators": [
+        {
+            "orcid": "https://orcid.org/0000-0002-4555-7385",
+            "affiliation": "Delft University of Technology",
+            "name": "Hulskamp, Romy"
+        },
+        {
+            "orcid": "https://orcid.org/0009-0006-0949-5726",
+            "affiliation": "Delft University of Technology",
+            "name": "Hulskemper, Daan"
+        }
+    ],
+
+    "license": "MIT",
+
+    "title": "ULS Dune Analysis Framework",
+
+    "related_identifiers": [
+        {
+            "scheme": "doi",
+            "identifier": "",
+            "relation": "",
+            "resource_type": "publication-article"
+        }
+    ],
+
+    "keywords": ["Coastal Morphology", "Dunes", "Ecomorphodynamics","UAV-LiDAR"],
+
+}
