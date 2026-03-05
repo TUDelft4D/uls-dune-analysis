@@ -13,6 +13,10 @@ The repository is organized in two folders. One for the analysis and one for vis
 
 '02_visualization' contains the scripts to visualize the (derived) data conforming the figures in the Manuscript.
 
-To use the code the necessary Python packages have to be installed in your local environment, and the data has to be downloaded separately at: [DOI], relative paths to the data have to be changed at the specified locations in the scripts.
+To use the code the necessary Python libraries have to be installed in your local environment, and the data has to be downloaded separately at: [DOI], relative paths to the data have to be changed at the specified locations in the scripts.
+
 
 For any questions please correspond to Daan Hulskemper (d.c.hulskemper@tudelft.nl) or Romy Hulskamp (r.l.hulskamp@tudelft.nl)
+
+If you use any of the code feel free to reference the software and related paper:
+[ADD REF]
